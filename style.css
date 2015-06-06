@@ -195,8 +195,8 @@ section:last-child {
 
 @media all and (max-width: 601px) {
   #cv {
-    width: 95%;
-    margin: 10px auto;
+    width: 98%;
+    margin: 4px auto;
     min-width: 280px;
   }
   #headshot {
@@ -207,6 +207,10 @@ section:last-child {
     width: 100%;
     text-align: center;
   }
+  #contactDetails table {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .sectionTitle, .sectionContent {
     float: none;
     width: 100%;
@@ -214,6 +218,10 @@ section:last-child {
   .sectionTitle {
     margin-left: -2px;
     font-size: 1.25em;
+  }
+  .sectionTitle h1 {
+    margin-bottom: 5px;
+    text-align: center;
   }
   .keySkills {
     -moz-column-count: 2;
@@ -231,11 +239,6 @@ section:last-child {
   }
   #mainArea {
     padding: 0 25px;
-  }
-  .keySkills {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
   }
   #name h1 {
     line-height: .8em;
