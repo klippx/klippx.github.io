@@ -61,18 +61,38 @@ p {
 #mainArea {
   padding: 0 40px;
 }
-
+/* Old style headshot: Just round
 #headshot {
   width: 12.5%;
   float: left;
   margin-right: 30px;
 }
+*/
+#headshot {
+  width: 20%;
+  float: left;
+  transform: rotate(4deg) translate(-37px,-25px);
+  padding: 5px;
+  background-color: whitesmoke;
+  border: 1px solid #ddd;
+}
 
+/* Paperclip icon
+#headshot i {
+  color: silver;
+  transform: scale(2.0) translate(44px,-4px) rotate(207deg);
+  z-index: 1;
+  position: relative;
+}
+*/
 #headshot img {
   width: 100%;
   height: auto;
-  -webkit-border-radius: 50px;
+/*  -webkit-border-radius: 50px;
   border-radius: 50px;
+*/
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 
 #name {
