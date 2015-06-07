@@ -35,8 +35,9 @@ p {
   width: 90%;
   height: 300px;
   max-width: 800px;
-  /* float: left; */
   position: absolute;
+  -ms-transform: translate(-3px,4px) rotate(-1deg);
+  -webkit-transform: translate(-3px,4px) rotate(-1deg);
   transform: translate(-3px,4px) rotate(-1deg);
   background-color: lavender;
   z-index: -1;
@@ -51,7 +52,7 @@ p {
 }
 
 .mainDetails {
-  padding: 25px 35px;
+  padding: 25px 35px 0px;
   border-bottom: 2px solid #9abad0;
   background: #ededed;
   -webkit-border-radius: 10px;
@@ -79,6 +80,8 @@ p {
 #headshot {
   width: 20%;
   float: left;
+  -ms-transform: rotate(4deg) translate(-37px,-25px);
+  -webkit-transform: rotate(4deg) translate(-37px,-25px);
   transform: rotate(4deg) translate(-37px,-25px);
   padding: 5px;
   background-color: whitesmoke;
@@ -92,7 +95,22 @@ p {
   border-radius: 3px;
 }
 
+#paperclip {
+  width: 4%;
+  float: left;
+  /*transform: translate(0px,3px) rotate(-21deg);*/
+  position: relative;
+  right: 73px;
+  bottom: 37px;
+}
+
+#paperclip img {
+  width: 100%;
+  height: auto;
+}
+
 #name {
+  margin-left: -30px;
   float: left;
 }
 
@@ -199,12 +217,12 @@ section:last-child {
   margin-bottom: 3px;
 }
 
-@media all and (min-width: 801px) and (max-width: 839px) {
+@media all and (min-width: 801px) and (max-width: 840px) {
   #name h1 {
-    font-size: 2.0em;
+    font-size: 2.25em;
   }
   #name h2 {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 }
 
@@ -217,19 +235,19 @@ section:last-child {
   }
 }
 
-@media all and (min-width: 602px) and (max-width: 605px) {
-  #name h1 {
-    font-size: 1.8em;
-  }
-  #name h2 {
-    font-size: 1.05em;
-  }
-}
-
 @media all and (min-width: 602px) and (max-width: 800px) {
-  #backdrop, #headshot {
+  .mainDetails {
+    padding: 25px 35px;
+  }
+
+  #name {
+    margin-left: inherit;
+  }
+
+  #paperclip, #backdrop, #headshot {
     display: none;
   }
+
   .keySkills {
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -238,35 +256,50 @@ section:last-child {
 }
 
 @media all and (max-width: 601px) {
+  .mainDetails {
+    padding: 25px 35px;
+  }
+
+  #name {
+    margin-left: inherit;
+  }
+
   #cv {
     width: 98%;
     margin: 4px auto;
     min-width: 280px;
   }
-  #backdrop, #headshot {
+
+  #paperclip, #backdrop, #headshot {
     display: none;
   }
+
   #name, #contactDetails {
     float: none;
     width: 100%;
     text-align: center;
   }
+
   #contactDetails table {
     margin-left: auto;
     margin-right: auto;
   }
+
   .sectionTitle, .sectionContent {
     float: none;
     width: 100%;
   }
+
   .sectionTitle {
     margin-left: -2px;
     font-size: 1.25em;
   }
+
   .sectionTitle h1 {
     margin-bottom: 5px;
     text-align: center;
   }
+
   .keySkills {
     -moz-column-count: 2;
     -webkit-column-count: 2;
