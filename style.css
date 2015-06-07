@@ -199,6 +199,33 @@ section:last-child {
   margin-bottom: 3px;
 }
 
+@media all and (min-width: 801px) and (max-width: 839px) {
+  #name h1 {
+    font-size: 2.0em;
+  }
+  #name h2 {
+    font-size: 1.25em;
+  }
+}
+
+@media all and (min-width: 602px) and (max-width: 674px) {
+  #name h1 {
+    font-size: 2.0em;
+  }
+  #name h2 {
+    font-size: 1.25em;
+  }
+}
+
+@media all and (min-width: 602px) and (max-width: 605px) {
+  #name h1 {
+    font-size: 1.8em;
+  }
+  #name h2 {
+    font-size: 1.05em;
+  }
+}
+
 @media all and (min-width: 602px) and (max-width: 800px) {
   #backdrop, #headshot {
     display: none;
