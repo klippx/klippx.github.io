@@ -12,7 +12,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 html, body {
-  background: #181818;
+  background-color: #3A4565;
   font-family: 'PT Sans', helvetica, arial, sans-serif;
   font-size: 16px;
   color: #222;
@@ -33,15 +33,14 @@ p {
 
 #backdrop {
   width: 90%;
-  height: 300px;
+  height: 100px;
   max-width: 800px;
   position: absolute;
-  -ms-transform: translate(-3px,4px) rotate(-1deg);
-  -webkit-transform: translate(-3px,4px) rotate(-1deg);
-  transform: translate(-3px,4px) rotate(-1deg);
-  background-color: lavender;
+  -ms-transform: translate(-3px,2px) rotate(-1deg);
+  -webkit-transform: translate(-3px,2px) rotate(-1deg);
+  transform: translate(-3px,2px) rotate(-1deg);
+  background-color: whitesmoke;
   z-index: -1;
-  border: 1px solid #bbb;
 }
 
 #cv {
