@@ -80,12 +80,15 @@ p {
 #headshot {
   width: 20%;
   float: left;
-  -ms-transform: rotate(4deg) translate(-37px,-25px);
-  -webkit-transform: rotate(4deg) translate(-37px,-25px);
-  transform: rotate(4deg) translate(-37px,-25px);
+  -ms-transform: rotate(5deg) translate(-5px,-4px);
+  -webkit-transform: rotate(5deg) translate(-5px,-4px);
+  transform: rotate(5deg) translate(-5px,-4px);
   padding: 5px;
   background-color: whitesmoke;
   border: 1px solid #ddd;
+  position: relative;
+  bottom: 21px;
+  right: 31px;
 }
 
 #headshot img {
@@ -98,7 +101,9 @@ p {
 #paperclip {
   width: 4%;
   float: left;
-  /*transform: translate(0px,3px) rotate(-21deg);*/
+  -ms-transform: translate(0px,3px) rotate(-21deg);
+  -webkit-transform: translate(0px,3px) rotate(-21deg);
+  transform: translate(0px,3px) rotate(-21deg);
   position: relative;
   right: 73px;
   bottom: 37px;
